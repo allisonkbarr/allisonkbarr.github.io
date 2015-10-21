@@ -15,7 +15,7 @@ header {
 }
 
 header div {
-  padding: 0 0 10px 10px;
+  padding: 0 0 10px 20px;
 }
 
 header h1, h2 {
@@ -47,19 +47,18 @@ header li:hover {
   text-decoration: underline;
 }
 
+.hidden {
+  display: none;
+}
+
 #portfolio-container {
   display: flex;
-  align-items: stretch;
+  flex-wrap: wrap;
   position: absolute;
   top: 94px;
   left: 0;
   right: 0;
   bottom: 0;
-  flex-wrap: wrap;
-}
-
-#portfolio-container h3 {
-  font-size: 40px;
 }
 
 #portfolio-container div {
@@ -67,6 +66,24 @@ header li:hover {
   min-width: 250px;
   padding: 20px;
   box-sizing: border-box;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 21.28px 0;
+}
+
+h4 a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 20px;
 }
 
 #first-box {
@@ -83,4 +100,25 @@ header li:hover {
 
 #fourth-box {
   background-color: #167C80;
+}
+
+
+
+
+/* Small and medium screens */
+
+@media all and (max-width: 800px) {
+  #portfolio-container {
+    flex-direction: column;
+    position: static;
+  }
+  #portfolio-container div {
+    width: 100%;
+  }
+  h3 {
+    margin: 16px 0;
+  }
+  h4 {
+    margin: 16px 0;
+  }
 }
