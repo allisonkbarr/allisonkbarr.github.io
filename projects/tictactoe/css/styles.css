@@ -1,0 +1,42 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+p {
+  height: 20px;
+  margin-top: -5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  font-size: 55;
+  text-align: center;
+}
+
+td.top {
+  border-top: 0;
+}
+
+td.bottom {
+  border-bottom: 0;
+}
+
+td.right {
+  border-right: 0;
+}
+
+td.left {
+  border-left: 0;
+}
+
+#refresh {
+  margin-top: 25px;
+  padding: 5px;
+}

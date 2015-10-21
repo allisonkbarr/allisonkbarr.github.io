@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  min-width: 980px;
+}
+
+a {
+  color: #1122CC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  display: inline-block;
+}
+
+header {
+  overflow: auto;
+}
+
+header a {
+  color: #222;
+}
+
+header a:hover {
+  color: #000;
+}
+
+header ul {
+  padding: 0 22.5px;
+}
+
+header li {
+  display: inline-block;
+  margin: auto 7.5px;
+  vertical-align: middle;
+}
+
+.center {
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #F2F2F2;
+  border-top: 1px solid #E2E2E2;
+  position: absolute;
+  bottom: 0;
+}
+
+footer a {
+  color: #666;
+}
+
+footer ul {
+  margin-right: 30px;
+  padding: 0;
+}
+
+footer li {
+  padding-left: 27px;
+}
+
+.sprites {
+  background-image: url(../images/google_buttons_sprite.png);
+  background-size: 356px 144px;
+  padding: 0;
+}
+
+.spriteOpacity {
+  opacity: .55;
+}
+
+.spriteOpacity:hover {
+  opacity: .85;
+}
+
+.sprites a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#googleProductsIcon {
+  background-position: -326px -52px;
+  width: 30px;
+  height: 30px;
+
+}
+
+#notificationsIcon {
+  background-position: -214px -117px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, .55);
+  border-radius: 100%;
+}
+
+#notificationsIcon:hover {
+  background-color: #000;
+}
+
+#plusIcon {
+  background-position: -326px -17px;
+  width: 30px;
+  height: 30px;
+
+}
+
+#profilePhoto {
+  background-image: url(../images/profile_photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 100%;
+}
+
+#logo {
+  height: 95px;
+  margin: 150px auto 27px auto;
+}
+
+#searchBox {
+  width: 487px;
+  margin: auto auto 13px auto;
+  position: relative;
+}
+
+#searchBox input {
+  padding: 5px 25px 5px 9px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.2em;
+  display: block;
+  border: 1px solid #d9d9d9;
+  border-top-color: #c0c0c0;
+}
+
+#searchBox input:hover {
+  border: 1px solid #b9b9b9;
+  border-top-color: #a0a0a0;
+}
+
+#searchBox input:focus {
+  border: 1px solid #4d90fe;
+  box-shadow: none;
+  outline: none;
+}
+
+#searchActions {
+  display: block;
+  width: 300px;
+}
+
+#searchActions button {
+  display: inline-block;
+}
+
+#mic {
+  height: 23px;
+  width: 17px;
+  display: block;
+  background-image: url("data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 19px;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  opacity: .6;
+}
+
+#mic:hover {
+  opacity: .8;
+}
+
+button {
+  font-size: 11px;
+  color: #444;
+  font-weight: bold;
+  background-color: #f8f8f8;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 2px;
+  margin: auto 8px 13px 8px;
+  padding: 8px;
+}
+
+button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+button:focus {
+  border: 1px solid #4d90fe;
+  box-shadow: none;
+  outline: none;
+}
