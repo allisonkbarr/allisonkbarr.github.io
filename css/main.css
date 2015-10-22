@@ -53,7 +53,6 @@ header li:hover {
 
 #portfolio-container {
   display: flex;
-  flex-wrap: wrap;
   position: absolute;
   top: 94px;
   left: 0;
@@ -108,6 +107,12 @@ p {
 /* Small and medium screens */
 
 @media all and (max-width: 800px) {
+  header h1 {
+    font-size: 22px;
+  }
+  header h2 {
+    font-size: 36px;
+  }
   #portfolio-container {
     flex-direction: column;
     position: static;
@@ -116,9 +121,10 @@ p {
     width: 100%;
   }
   h3 {
-    margin: 16px 0;
+    font-size: 36px;
+    margin: 10px 0;
   }
   h4 {
-    margin: 16px 0;
+    margin: 10px 0;
   }
 }

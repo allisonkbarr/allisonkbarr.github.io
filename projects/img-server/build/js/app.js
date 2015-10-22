@@ -14,7 +14,7 @@ var Header = React.createClass({
           "div",
           { id: "flex-header" },
           React.createElement(
-            "h3",
+            "h1",
             null,
             "Simple Image Server"
           ),
@@ -86,7 +86,7 @@ var KeysForm = React.createClass({
   createKey: function createKey(name) {
     var newKey = {
       name: name,
-      code: "xxx"
+      code: "00000000000000"
     };
     actions.addKey(newKey);
   },
@@ -138,16 +138,12 @@ var Key = React.createClass({
       { className: "row table-row" },
       React.createElement(
         "div",
-        { className: "col-xs-2 table-cols" },
-        React.createElement(
-          "p",
-          null,
-          this.props.data.name
-        )
+        { className: "col-sm-2 col-xs-3 table-cols name-col" },
+        this.props.data.name
       ),
       React.createElement(
         "div",
-        { className: "col-xs-6" },
+        { className: "col-sm-6 col-xs-9" },
         React.createElement(
           "div",
           { className: "key highlight" },
@@ -165,7 +161,7 @@ var Key = React.createClass({
       ),
       React.createElement(
         "div",
-        { className: "col-xs-2 align-right table-cols" },
+        { className: "col-sm-2 reqs table-cols" },
         React.createElement(
           "p",
           null,
@@ -174,7 +170,7 @@ var Key = React.createClass({
       ),
       React.createElement(
         "div",
-        { className: "col-xs-2 align-right table-cols" },
+        { className: "col-sm-2 reqs table-cols" },
         React.createElement(
           "p",
           null,
@@ -202,16 +198,12 @@ var Keys = React.createClass({
           { className: "row table-header" },
           React.createElement(
             "div",
-            { className: "col-xs-2" },
-            React.createElement(
-              "p",
-              null,
-              "Name"
-            )
+            { className: "col-sm-2 col-xs-3 name-col name" },
+            "Name"
           ),
           React.createElement(
             "div",
-            { className: "col-xs-6" },
+            { className: "col-sm-6 col-xs-9" },
             React.createElement(
               "p",
               null,
@@ -220,7 +212,7 @@ var Keys = React.createClass({
           ),
           React.createElement(
             "div",
-            { className: "col-xs-2 align-right" },
+            { className: "col-sm-2 reqs" },
             React.createElement(
               "p",
               null,
@@ -229,7 +221,7 @@ var Keys = React.createClass({
           ),
           React.createElement(
             "div",
-            { className: "col-xs-2 align-right" },
+            { className: "col-sm-2 reqs" },
             React.createElement(
               "p",
               null,
@@ -422,7 +414,7 @@ var actions = {
 
 var state = {
   user: "ib",
-  keys: [{ name: "blah", code: "01:0f:f4:3b:ca:85:d6:17" }, { name: "blahblah", code: "0f:f4:3b:ca:85:d6:17" }],
+  keys: [{ name: "Site1", code: "n29fn402nhlwpa" }, { name: "Site2", code: "2k4n6lwni3sl02" }],
   view: {
     loggedInPage: "dashboard"
   }

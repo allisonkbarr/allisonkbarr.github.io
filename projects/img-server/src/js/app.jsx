@@ -6,7 +6,7 @@ var Header = React.createClass({
       <div className="container-fluid">
         <header>
           <div id="flex-header">
-            <h3>Simple Image Server</h3>
+            <h1>Simple Image Server</h1>
             { this.props.hasUser && <nav>
               <a href="#" className="active">Dashboard</a>
               <a href="#">Documentation</a>
@@ -49,7 +49,7 @@ var KeysForm = React.createClass({
   createKey(name) {
     var newKey = {
       name: name,
-      code: 'xxx'
+      code: '00000000000000'
     }
     actions.addKey(newKey)
   },
@@ -89,10 +89,10 @@ var Key = React.createClass({
   render() {
     return (
       <div className="row table-row">
-        <div className="col-xs-2 table-cols">
-          <p>{this.props.data.name}</p>
+        <div className="col-sm-2 col-xs-3 table-cols name-col">
+          {this.props.data.name}
         </div>
-        <div className="col-xs-6">
+        <div className="col-sm-6 col-xs-9">
           <div className="key highlight">
             <p>{this.renderCode(this.props.data.code)}</p>
             <a onClick={this.toggleCodeVisibility} href="#">
@@ -100,10 +100,10 @@ var Key = React.createClass({
             </a>
           </div>
         </div>
-        <div className="col-xs-2 align-right table-cols">
+        <div className="col-sm-2 reqs table-cols">
           <p>20</p>
         </div>
-        <div className="col-xs-2 align-right table-cols">
+        <div className="col-sm-2 reqs table-cols">
           <p>539</p>
         </div>
       </div>
@@ -120,16 +120,16 @@ var Keys = React.createClass({
           <KeysHeader />
           <KeysForm />
           <div className="row table-header">
-            <div className="col-xs-2">
-              <p>Name</p>
+            <div className="col-sm-2 col-xs-3 name-col name">
+              Name
             </div>
-            <div className="col-xs-6">
+            <div className="col-sm-6 col-xs-9">
               <p>Key</p>
             </div>
-            <div className="col-xs-2 align-right">
+            <div className="col-sm-2 reqs">
               <p>Req's today</p>
             </div>
-            <div className="col-xs-2 align-right">
+            <div className="col-sm-2 reqs">
               <p>Req's this month</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ var actions = {
 
 var state = {
   user: 'ib',
-  keys: [{ name: 'blah', code: '01:0f:f4:3b:ca:85:d6:17' }, { name: 'blahblah', code: '0f:f4:3b:ca:85:d6:17' }],
+  keys: [{ name: 'Site1', code: 'n29fn402nhlwpa' }, { name: 'Site2', code: '2k4n6lwni3sl02' }],
   view: {
     loggedInPage: 'dashboard'
   }
