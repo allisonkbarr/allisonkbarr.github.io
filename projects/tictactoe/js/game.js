@@ -33,10 +33,10 @@ api.findCurrentCombos = function(winCombos, squaresData) {
 api.checkWinMove = function checkWinMove(winCombos, squaresData, num) {
   var currentCombos = api.findCurrentCombos(winCombos, squaresData)
   return currentCombos.reduce(function(seed, arr, i){   //return array with index of winning space
-    if (seed) return seed
+    if (seed != null) return seed
     var winI = api.findWinMove(num, arr)
     if (winI > -1) return winCombos[i][winI]
-  }, 0)
+  }, null)
 }
 
 //For AI - Check if any move can win the game, and return the index of that square
