@@ -61,8 +61,7 @@ header li:hover {
 }
 
 #portfolio-container div {
-  width: 25%;
-  min-width: 250px;
+  width: 20%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -85,22 +84,25 @@ p {
   line-height: 20px;
 }
 
-#first-box {
+#portfolio-box {
   background-color: #E8846B;
 }
 
-#second-box {
+#tempus-box {
   background-color: #E44B4B;
 }
 
-#third-box {
-  background-color: #A2C5BF;
-}
-
-#fourth-box {
+#finlit-box {
   background-color: #167C80;
 }
 
+#tictactoe-box {
+  background-color: #A2C5BF;
+}
+
+#google-box {
+  background-color: #755F6F;
+}
 
 
 
