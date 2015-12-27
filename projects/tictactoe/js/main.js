@@ -7,7 +7,7 @@ var squaresData = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 var squaresElems = [].slice.call(document.querySelectorAll("td"))
 
-//indexes for win combos
+//indexes for win combos, e.g. top 3 across is 0, 1, 2
 
 var winCombos = [
   [ 0, 1, 2 ],
@@ -45,6 +45,7 @@ document.querySelector("table").addEventListener("click", function(e){
   // if game isnt over, let the AI go
   setTimeout(()=>{
     api.assignSquare(squaresData, api.aiSelect(winCombos, squaresData), "ai", squaresElems)
+
     // if game is over, and someone won, the ai won!
     if (api.checkWinCombos(winCombos, squaresData)) {
       return document.getElementById("message").innerHTML = "You Lose. Try again!"

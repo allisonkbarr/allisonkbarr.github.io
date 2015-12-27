@@ -1,4 +1,4 @@
-//Check if any 2 of 3 given numbers in an array are equal to another given number and the third is 0. If so, return the index of the 0.
+//Check if any 2 of 3 numbers in an array are equal to a given number and the third is 0. If so, return the index of the 0.
 
 var api = {}
 
@@ -10,9 +10,7 @@ api.find = function find(arr, fn) {
   } return -1
 }
 
-api.isNumber = function isNumber(val) {
-  return (typeof(val) == "number")
-}
+//check each win combo array to see if a winning move is possible - i.e. no spots are taken by opponent, and there isn't more than one open space
 
 api.findWinMove = function findWinMove(num, arr) {
   if (arr.some((arg) => arg != num && arg != 0)) {
@@ -24,11 +22,15 @@ api.findWinMove = function findWinMove(num, arr) {
   return arr.indexOf(0)
 }
 
+//match win combos up with game data
+
 api.findCurrentCombos = function(winCombos, squaresData) {
   return winCombos.map(function(innerArr) {
     return innerArr.map((arg) => squaresData[arg])
   })
 }
+
+//run findWinMove against the current data
 
 api.checkWinMove = function checkWinMove(winCombos, squaresData, num) {
   var currentCombos = api.findCurrentCombos(winCombos, squaresData)
@@ -108,7 +110,7 @@ api.checkWinCombo = function checkWinCombo(combo, squaresData) {
   )
 }
 
-//return true if any win combos have been met
+//run checker across all combos and return true if any win combos have been met
 
 api.checkWinCombos = function checkWinCombos(winCombos, squaresData) {
   return winCombos.some((combo) => api.checkWinCombo(combo, squaresData) )
