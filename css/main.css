@@ -88,27 +88,31 @@ p {
   background-color: #E8846B;
 }
 
-#tempus-box {
+#abarrphoto-box {
   background-color: #E44B4B;
 }
 
-#finlit-box {
+#tempus-box {
   background-color: #167C80;
 }
 
-#tictactoe-box {
+#finlit-box {
   background-color: #A2C5BF;
 }
 
-#google-box {
+#tictactoe-box {
   background-color: #755F6F;
+}
+
+#google-box {
+  background-color: #0F5092;
 }
 
 
 
 /* Small and medium screens */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1279px) {
   header h1 {
     font-size: 22px;
   }
