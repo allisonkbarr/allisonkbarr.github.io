@@ -22,6 +22,16 @@
     font-size: 40px;
     margin: 0;
   }
+
+  a {
+      color: darken($text-color, 25%);
+      text-decoration: none;
+
+      &:hover {
+          color: lighten($accent3, 15%);
+          text-decoration: none;
+      }
+  }
 }
 
 .site-nav {
