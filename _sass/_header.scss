@@ -1,0 +1,101 @@
+#site-header {
+  background-color: $off-white;
+  padding: 0 20px 10px;
+
+  >div {
+    display: inline-block;
+  }
+
+  h1, h2 {
+    color: $black;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+}
+
+.site-nav {
+  margin-left: 40px;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1.5;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1279px) {
+  #site-header h1 {
+    font-size: 22px;
+  }
+  #site-header h2 {
+    font-size: 36px;
+  }
+}

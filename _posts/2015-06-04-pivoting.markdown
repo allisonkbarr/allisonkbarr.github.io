@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Pivoting"
+date:   2015-06-04 18:53:33 +0100
+categories:
+---
+It strikes me that this isn't such a dramatic pivot compared to some inspiring stories.  Taking a leap to becoming a digital nomad is certainly exhilarating, but I certainly haven't lived in one place my whole life. Between college and now (8 years), I have moved 11 times and lived in 4 major US cities.  Nonetheless, the prospect of quitting my job, leaving (almost) everything behind, and taking off for a largely unplanned excursion has been, and continues to be, nerve-wracking for me.
+
+If I let myself, I think I could spend literally all my time researching the trip.
+
+As for the pivot to becoming a web developer, I'm excited at the prospect of being able to create products myself. Leading a team as a producer was a good fit for my type-A personality, and I still love the idea of facilitating others' work, but I grew to want greater flexibility in my schedule and greater agency as an individual.  I love bringing ideas to life and problem solving, and I am excited to be able to do this as a programmer.
+
+Since my mind is so preoccupied with travel-related topics, I'm planning for one of my first projects to be a way to input locations and see a visualization of their typical weather at different times of year.  Sound like it could be useful?  First things first - I need to identify my MVP...

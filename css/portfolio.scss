@@ -1,0 +1,125 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+        "base",
+        "layout",
+        "header"
+;
+
+
+#portfolio-container {
+  color: $font-white;
+  font-size: 16px;
+  margin: 0;
+  line-height: normal;
+  display: flex;
+  position: absolute;
+  top: 94px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+  }
+
+  div {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: $font-white;
+
+    &:hover, &:visited {
+      color: $font-white;
+    }
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h3, h4 {
+    margin: 21.28px 0;
+  }
+
+  h4 a {
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  h4 a:hover {
+    text-decoration: underline;
+  }
+
+  .git-link {
+    text-decoration: underline;
+  }
+
+  p {
+    line-height: 20px;
+    margin: 16px 0;
+  }
+}
+
+
+
+#portfolio-box {
+  background-color: #E8846B;
+}
+
+#abarrphoto-box {
+  background-color: #E44B4B;
+}
+
+#tempus-box {
+  background-color: #167C80;
+}
+
+#finlit-box {
+  background-color: #A2C5BF;
+}
+
+#tictactoe-box {
+  background-color: #755F6F;
+}
+
+#google-box {
+  background-color: #0F5092;
+}
+
+
+// DO NOT DISPLAY FOOTER ON HORIZONTAL LAYOUT
+
+.site-footer {
+  display: none;
+}
+
+
+/* Small and medium screens */
+
+@media all and (max-width: 1279px) {
+  #portfolio-container {
+    flex-direction: column;
+    position: static;
+
+    div {
+    width: 100%;
+    }
+    h3 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+    h4 {
+      margin: 10px 0;
+    }
+  }
+  .site-footer {
+    display: block;
+  }
+}
