@@ -6,7 +6,7 @@ categories:
 ---
 For a recent gig, I took on rebuilding a website that had originally been built using React, and I took the opportunity to try out some "alternative" libraries - namely [Redux](http://redux.js.org/) and [Deku](https://github.com/dekujs/deku). The project is [Andrew Barr Photography](http://www.abarrphoto.com) - a professional photography site featuring an About page, Gallery, and Projects pages.
 
-###Redux
+<h3>Redux</h3>
 
 It's funny for me to refer to Redux as an alternative because, in fact, I have never used any of the more common solutions for state management myself. I have heard a bit about Flux from other developers - primarily talking about its issues. Stepping further back (since [Facebook created Flux](http://www.infoq.com/news/2014/05/facebook-mvc-flux) back in 2014 as an alternative to MVC for large applications), I have not really had the opportunity to work on an MVC project, either. That said, with the recent buzz around Redux, it seemed to me there is no good reason to treat these systems as something that must be tackled in order. Perhaps I won't appreciate the wonder of Redux as much having not first dealt with Flux, but I'm happy to save myself the headache for now.
 
@@ -34,7 +34,7 @@ This example is from another project I'm working on - [Finlit.io](http://finlit.
 
 I definitely foresee using Redux on future projects, and continuing to look for ways to make my implementation of it more streamlined. For instance, are separate actions and reducers really necessary for actions that share a certain signature (e.g. update, push), or could you create a generic action and reducer to capture them? I started to implement this on Finlit, but found I was tripping over it a bit. For now, I think I like the simplicity of the set pattern.
 
-###Deku
+<h3>Deku</h3>
 
 Working with Deku was also a fun experience, though overall, I would say that it is a less thoroughly developed library, which caused some frustrations in debugging.
 
