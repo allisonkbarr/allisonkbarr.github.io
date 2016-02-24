@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Kata Revisited"
-date:   2016-02-20 18:00:33 +0100
+date:   2016-02-20 18:00:00 +0100
 categories:
 ---
 
