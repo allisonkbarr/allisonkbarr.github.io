@@ -13,7 +13,7 @@ I found a couple ways to make it more efficient. First, in my function for findi
 
 Second, in no case would the result of the problem be greater than the given arguments, so in my for loop in the checkchoose function, I was unnecessarily going all the way up to i <= factorial(n), when it could just be n.
 
-These changes, and especially the latter, gave the improvement in performance needed, but now I was failing a couple of the tests somehow. To figure out the issue, I narrowed the tests down to just one of the ones that was failing - {% highlight javascript %}Test.assertEquals(checkchoose(155117520, 30), 15){% endhighlight %} - and added in a console.log line in the for loop of checkchoose:
+These changes, and especially the latter, gave the improvement in performance needed, but now I was failing a couple of the tests somehow. To figure out the issue, I narrowed the tests down to just one of the ones that was failing: {% highlight javascript %}Test.assertEquals(checkchoose(155117520, 30), 15){% endhighlight %} ...and added in a console.log line in the for loop of checkchoose:
 
 {% highlight javascript %}
 for (var i = 1; i <= n; i++) {
