@@ -6,8 +6,9 @@ categories:
 ---
 
 Just a brief post to share another kata solution I am happy with from my recent time on Codewars.  [The problem](http://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript) asks you to calculate whether a walk described in an array (with one-block lengths of n, s, e, and w that each take 1 minute to walk) will:
-a) take 10 minutes, and
-b) get you back to where you started.
+
+1. take 10 minutes, and
+2. get you back to where you started.
 
 At first, I approached the problem by thinking of the coordinates as an ordered pair. For example, your starting position could be described as [0, 0], and at the end of the function you would check if the ending coordinates were also [0, 0].
 
@@ -29,6 +30,7 @@ function isValidWalk(walk) {
 {% endhighlight %}
 
 A couple more notes on things I tried to do here:
+
 - For a small performance improvement, I put my check for the 10-minute requirement at the top of the function.
 - I broke out the function that calculates the difference in occurrences of two values in an array. This would allow it to be reused, makes it easier to test each individual part of the overall solution, and hopefully also makes the code a bit easier to read.
 
