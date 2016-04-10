@@ -4,6 +4,7 @@ title:  "Calculating Coordinates for a Kata"
 date:   2016-04-08 16:50:00 +0100
 categories:
 ---
+
 Just a brief post to share another kata solution I am happy with from my recent time on Codewars.  [The problem](http://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript) asks you to calculate whether a walk described in an array (with one-block lengths of n, s, e, and w that each take 1 minute to walk) will:
 a) take 10 minutes, and
 b) get you back to where you started.
