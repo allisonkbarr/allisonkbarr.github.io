@@ -10,7 +10,7 @@ For a recent gig, I took on rebuilding a website that had originally been built 
 
 It's funny for me to refer to Redux as an alternative because, in fact, I have never used any of the more common solutions for state management myself. I have heard a bit about Flux from other developers - primarily talking about its issues. Stepping further back (since [Facebook created Flux](http://www.infoq.com/news/2014/05/facebook-mvc-flux) back in 2014 as an alternative to MVC for large applications), I have not really had the opportunity to work on an MVC project, either. That said, with the recent buzz around Redux, it seemed to me there is no good reason to treat these systems as something that must be tackled in order. Perhaps I won't appreciate the wonder of Redux as much having not first dealt with Flux, but I'm happy to save myself the headache for now.
 
-So, comparing my use of Redux to the experience of building a web app without any such tool, I would say that I found it very satisfying and easy enough to learn. The creator of Redux has put out a series of very helpful [tutorial videos](https://egghead.io/series/getting-started-with-redux), walking you through how the code works and how to implement it. It is all simple and straight-forward enough that you can easily recreate the codebase yourself, as I did.
+So, comparing my use of Redux to the experience of building a web app without any such tool, I would say that I found it very satisfying and easy enough to learn. The creator of Redux has put out a series of very helpful [tutorial videos](https://egghead.io/series/getting-started-with-redux), walking you through how the code works and how to implement it. It is all simple and straight-forward enough that you can easily follow along and recreate parts of the codebase yourself, as I did.
 
 I call it satisfying because it creates a very neat, well-organized pattern for you to follow. For example - a user clicks a button to show a side-nav, the action creator function you've tied to that click event sends an action to your reducer, which checks the action type and payload and dispatches the appropriate state update to the store. Using store.subscribe, you trigger a re-render each time store is updated. And voilà!
 
@@ -30,7 +30,7 @@ export const submitPendingBeta = (rawEmail) => {
 }
 {% endhighlight %}
 
-This example is from another project I'm working on - [Finlit.io](http://finlit.io) - for which we have just a landing page live so far. This code handles the submission of an email address to our Beta testers sign-up form - creating both an action for submitting the email address and one for displaying a thank you message.
+This example is from another project I'm working on - [Finlit.io](http://finlit.io) - for which we have just a landing page live so far. This code handles the submission of an email address to our Beta testers sign-up form - creating both an action for clearing the email input field and one for displaying a thank you message.
 
 I definitely foresee using Redux on future projects, and continuing to look for ways to make my implementation of it more streamlined. For instance, are separate actions and reducers really necessary for actions that share a certain signature (e.g. update, push), or could you create a generic action and reducer to capture them? I started to implement this on Finlit, but found I was tripping over it a bit. For now, I think I like the simplicity of the set pattern.
 
