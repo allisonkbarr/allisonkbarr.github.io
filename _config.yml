@@ -9,7 +9,7 @@
 title: Allison Keane Barr, Web Developer
 email: allisonkeane@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website of one "girl dev" and digital-nomad-wannabe - that's me! Follow my journey on my blog, Life Bytes, as I tackle the career pivot and learn to code!
+  Personal website of one "girl dev" and digital-nomad-wannabe - that's me! Follow my journey on my blog, Life Bytes, as I tackle the career pivot and embrace life as an engineer!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://allisonkbarr.github.io" # the base hostname & protocol for your site
 twitter_username: allisonkeane
