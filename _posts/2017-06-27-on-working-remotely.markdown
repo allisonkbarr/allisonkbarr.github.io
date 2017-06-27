@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On Working Remotely for a Non-Remote Team"
-date:   2017-06-28 12:00:00 -0800
+date:   2017-06-27 12:00:00 -0800
 categories:
 ---
 Since February 1 of this year, I have been working remotely for Quartet, a startup in NYC. This is now my 3rd time working remotely as part of a non-remote team, the first two as a PM and now as an engineer. There are plenty of resources out there for finding tools and tips for working remotely, but how well you handle the transition is largely down to the emotional and mental experience of it.
