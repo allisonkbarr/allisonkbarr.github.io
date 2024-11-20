@@ -8,10 +8,9 @@
 # Site settings
 title: Allison Keane Barr, Product Engineering Leader
 email: allisonkeane@gmail.com
-description: # this means to ignore newlines until "baseurl:"
+description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://allisonkbarr.github.io" # the base hostname & protocol for your site
-twitter_username: allisonkeane
 github_username:  allisonkbarr
 blog_css: "/css/blog.css"
 
